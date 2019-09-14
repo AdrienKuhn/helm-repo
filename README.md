@@ -1,6 +1,8 @@
 # Helm repository
 
-## Add repository
+## Add repo
+
+Add the repo to your local repository list.
 
 ```bash
 helm repo add adrienkuhn-helm-repo https://adrienkuhn.github.io/helm-repo
