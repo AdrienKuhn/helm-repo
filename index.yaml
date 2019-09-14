@@ -3,6 +3,15 @@ entries:
   octobox:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2019-09-14T10:36:47.15743-04:00"
+    description: An Octobox chart for Kubernetes
+    digest: a0e649f14a7752f7d538b642066b4f64bffdaa2c2c46edf1a1cbe505a3b531fe
+    name: octobox
+    urls:
+    - octobox-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2019-09-14T10:26:00.830321-04:00"
     description: An Octobox chart for Kubernetes
     digest: 999cdfa98e62ba443cd2bdc6c1c26973890e9d12c418743eaab071f6e75641c7
@@ -20,4 +29,4 @@ entries:
     urls:
     - poh-0.0.1.tgz
     version: 0.0.1
-generated: "2019-09-14T10:26:00.829687-04:00"
+generated: "2019-09-14T10:36:47.156035-04:00"
