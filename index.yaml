@@ -49,6 +49,15 @@ entries:
   poh:
   - apiVersion: v1
     appVersion: 4.3.2
+    created: "2019-11-23T14:02:48.376271-05:00"
+    description: A Pi-hole over HTTPS Helm chart for Kubernetes
+    digest: c6c18bbdbec358642e615e3ae6c0f34e3fae4ac5d59a023290ee0dd1d75e021d
+    name: poh
+    urls:
+    - poh-0.0.6.tgz
+    version: 0.0.6
+  - apiVersion: v1
+    appVersion: 4.3.2
     created: "2019-11-17T16:49:04.194131-05:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: 24adc5d4f6b1a8fe69d77d4fc2df417d9fb9981f1d6f72a8f7788a0b7a24fee9
@@ -92,4 +101,4 @@ entries:
     urls:
     - poh-0.0.1.tgz
     version: 0.0.1
-generated: "2019-11-17T16:49:04.180507-05:00"
+generated: "2019-11-23T14:02:48.35921-05:00"
