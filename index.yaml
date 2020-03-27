@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  nginx:
+  - apiVersion: v2
+    appVersion: 1.1.1
+    created: "2020-03-27T19:45:04.630593-04:00"
+    description: A nginx Helm chart for Kubernetes
+    digest: 9335a0e9649479fbd9c1f0d03c6593ad1a521050c0725c7410dfa502f196c167
+    name: nginx
+    type: application
+    urls:
+    - nginx-0.1.0.tgz
+    version: 0.1.0
   octobox:
   - apiVersion: v2
     appVersion: "1.0"
@@ -113,11 +124,11 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2019-09-14T10:24:11.483087-04:00"
+    created: "2020-03-27T19:45:04.636985-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: a161bc17379064fb0689a73b21f4ab454e03cf799bb9b52db6c0b6a781c9b680
     name: poh
     urls:
     - poh-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-01T16:56:05.931506-05:00"
+generated: "2020-03-27T19:45:04.629217-04:00"
