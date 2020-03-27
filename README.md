@@ -18,3 +18,7 @@ helm repo update
 ### Octobox
 
 [Octobox](https://github.com/AdrienKuhn/octobox-helm-chart)
+
+### Nginx
+
+[nginx](https://github.com/AdrienKuhn/nginx-helm-chart)
