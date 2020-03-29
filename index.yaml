@@ -13,6 +13,35 @@ entries:
     version: 0.1.0
   octobox:
   - apiVersion: v2
+    appVersion: latest
+    created: "2020-03-29T14:11:45.570546-04:00"
+    dependencies:
+    - alias: postgresql
+      condition: postgresql.enabled, global.postgresql.enabled
+      enabled: true
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.10
+    - alias: redis
+      condition: redis.enabled, global.redis.enabled
+      enabled: true
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.14
+    - alias: nginx
+      condition: nginx.enabled, global.nginx.enabled
+      enabled: true
+      name: nginx
+      repository: https://adrienkuhn.github.io/helm-repo/
+      version: 0.1.0
+    description: An Octobox Helm chart for Kubernetes
+    digest: 552323582f6a04b2ce1d6ec16979118056dd8850c25d1abd27a20e43f60d4cd4
+    name: octobox
+    type: application
+    urls:
+    - octobox-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: "1.0"
     created: "2020-03-01T16:56:05.944882-05:00"
     description: An Octobox chart for Kubernetes
@@ -131,4 +160,4 @@ entries:
     urls:
     - poh-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-27T19:45:04.629217-04:00"
+generated: "2020-03-29T14:11:45.548185-04:00"
