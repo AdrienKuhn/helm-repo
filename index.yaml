@@ -3,7 +3,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.1.1
-    created: "2020-03-27T19:45:04.630593-04:00"
+    created: "2020-03-29T15:49:21.109397-04:00"
     description: A nginx Helm chart for Kubernetes
     digest: 9335a0e9649479fbd9c1f0d03c6593ad1a521050c0725c7410dfa502f196c167
     name: nginx
@@ -14,7 +14,36 @@ entries:
   octobox:
   - apiVersion: v2
     appVersion: latest
-    created: "2020-03-29T14:11:45.570546-04:00"
+    created: "2020-03-29T15:49:21.13838-04:00"
+    dependencies:
+    - alias: postgresql
+      condition: postgresql.enabled, global.postgresql.enabled
+      enabled: true
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.10
+    - alias: redis
+      condition: redis.enabled, global.redis.enabled
+      enabled: true
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.5.14
+    - alias: nginx
+      condition: nginx.enabled, global.nginx.enabled
+      enabled: true
+      name: nginx
+      repository: https://adrienkuhn.github.io/helm-repo/
+      version: 0.1.0
+    description: An Octobox Helm chart for Kubernetes
+    digest: 1e50bb8421a2f41a28f5b5dfa04f8d89790f127fdd7288053338b754f2688ac9
+    name: octobox
+    type: application
+    urls:
+    - octobox-0.2.1.tgz
+    version: 0.2.1
+  - apiVersion: v2
+    appVersion: latest
+    created: "2020-03-29T15:49:21.131202-04:00"
     dependencies:
     - alias: postgresql
       condition: postgresql.enabled, global.postgresql.enabled
@@ -43,7 +72,7 @@ entries:
     version: 0.2.0
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2020-03-01T16:56:05.944882-05:00"
+    created: "2020-03-29T15:49:21.123238-04:00"
     description: An Octobox chart for Kubernetes
     digest: 38629665fcb8f6ebfb628f93511265a4222334b5a82ad346a5cfad2d5e873df8
     name: octobox
@@ -53,7 +82,7 @@ entries:
     version: 0.1.5
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-05T16:21:55.307497-04:00"
+    created: "2020-03-29T15:49:21.12147-04:00"
     description: An Octobox chart for Kubernetes
     digest: 045a98519356a8e66b44dd85c8f7985179f09b2deef55914ee3cbb2ceb297b3c
     name: octobox
@@ -62,7 +91,7 @@ entries:
     version: 0.1.4
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-09-22T19:28:24.338357-04:00"
+    created: "2020-03-29T15:49:21.119288-04:00"
     description: An Octobox chart for Kubernetes
     digest: 3b979ff16fa35e19ab93d8ab569370f4249d3992994ec1f48bf2f521fff171f7
     name: octobox
@@ -71,7 +100,7 @@ entries:
     version: 0.1.3
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-09-15T19:02:16.796447-04:00"
+    created: "2020-03-29T15:49:21.117109-04:00"
     description: An Octobox chart for Kubernetes
     digest: 14abd1557741be937ed1594dc8897098344fe6694d747b6532dc2caa8ba6006b
     name: octobox
@@ -80,7 +109,7 @@ entries:
     version: 0.1.2
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-09-14T10:36:47.15743-04:00"
+    created: "2020-03-29T15:49:21.115332-04:00"
     description: An Octobox chart for Kubernetes
     digest: a0e649f14a7752f7d538b642066b4f64bffdaa2c2c46edf1a1cbe505a3b531fe
     name: octobox
@@ -89,7 +118,7 @@ entries:
     version: 0.1.1
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-09-14T10:26:00.830321-04:00"
+    created: "2020-03-29T15:49:21.111245-04:00"
     description: An Octobox chart for Kubernetes
     digest: 999cdfa98e62ba443cd2bdc6c1c26973890e9d12c418743eaab071f6e75641c7
     name: octobox
@@ -99,16 +128,16 @@ entries:
   poh:
   - apiVersion: v1
     appVersion: 4.3.2
-    created: "2020-02-29T21:47:25.889893-05:00"
+    created: "2020-03-29T15:49:21.150824-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
-    digest: 017452132cd46b62784113cf88fe6406048b83fdccb3622530e89e7e171523f3
+    digest: 3a811f2bfc54e48251dc39eb1cc5db5e82ceadab088885d8a8e38070eb1219a7
     name: poh
     urls:
     - poh-0.0.7.tgz
     version: 0.0.7
   - apiVersion: v1
     appVersion: 4.3.2
-    created: "2019-11-23T14:02:48.376271-05:00"
+    created: "2020-03-29T15:49:21.148594-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: c6c18bbdbec358642e615e3ae6c0f34e3fae4ac5d59a023290ee0dd1d75e021d
     name: poh
@@ -117,7 +146,7 @@ entries:
     version: 0.0.6
   - apiVersion: v1
     appVersion: 4.3.2
-    created: "2019-11-17T16:49:04.194131-05:00"
+    created: "2020-03-29T15:49:21.146867-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: 24adc5d4f6b1a8fe69d77d4fc2df417d9fb9981f1d6f72a8f7788a0b7a24fee9
     name: poh
@@ -126,7 +155,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: 4.3.2
-    created: "2019-09-23T18:39:03.573817-04:00"
+    created: "2020-03-29T15:49:21.144996-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: e641bf0d596dd377af5e1379c8b4a5b2358164f69679998be4396ee76c2284ba
     name: poh
@@ -135,7 +164,7 @@ entries:
     version: 0.0.4
   - apiVersion: v1
     appVersion: 0.0.2
-    created: "2019-09-22T19:28:24.340413-04:00"
+    created: "2020-03-29T15:49:21.143656-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: 0368dbd536e31caa10c17ef33a1119280e4d7207015570006939fed47a2176a6
     name: poh
@@ -144,7 +173,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: 0.0.2
-    created: "2019-09-15T18:59:47.252548-04:00"
+    created: "2020-03-29T15:49:21.141656-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: 74086af7b0d35245ef398bd19594d8a0df6042249fd65822d9e7bfc3cb85d358
     name: poh
@@ -153,11 +182,11 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: 0.0.1
-    created: "2020-03-27T19:45:04.636985-04:00"
+    created: "2020-03-29T15:49:21.139986-04:00"
     description: A Pi-hole over HTTPS Helm chart for Kubernetes
     digest: a161bc17379064fb0689a73b21f4ab454e03cf799bb9b52db6c0b6a781c9b680
     name: poh
     urls:
     - poh-0.0.1.tgz
     version: 0.0.1
-generated: "2020-03-29T14:11:45.548185-04:00"
+generated: "2020-03-29T15:49:21.10766-04:00"
